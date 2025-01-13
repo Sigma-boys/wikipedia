@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    background-color: #88BDBC
+}
+@font-face {
+    font-family: urbanist;
+    src: url(Urbanist.ttf);
+}
+.welcome{
+    font-family: urbanist;
+    color: rgb(234, 255, 242);
+    font-size: 200px;
+}
