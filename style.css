@@ -2,12 +2,79 @@ body {
     margin: 0;
     background-color: #88BDBC
 }
+body, html {
+    overflow-x: hidden; /* Får bort irriterande horisontell scrolling */
+}
 @font-face {
     font-family: urbanist;
     src: url(Urbanist.ttf);
 }
 .welcome{
     font-family: urbanist;
-    color: rgb(234, 255, 242);
-    font-size: 200px;
+    background-color: #254e58;
+    display: flex;
+    size: 100px;
+    align-items: center;
+    justify-content: space-around;
+}
+.welcome img{
+    width: auto;
+    height: 100px;
+    animation: slideInMenu 1.5s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+.welcome p{
+    animation: slideInMenu 1.5s ease-in-out forwards;
+    animation-delay: 0.3s;
+    font-family: urbanist;
+    font-size: 40px;
+    color: rgb(200, 255, 240);
+}
+@keyframes slideInMenu {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.welcome {
+    font-family: urbanist;
+    background-color: #254e58;
+    display: flex;
+    size: 100px;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.welcome img.chevron {
+    width: auto;
+    height: 100px;
+    cursor: pointer;
+    animation: slideInMenu 1.5s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
 }
