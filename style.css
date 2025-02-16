@@ -161,7 +161,7 @@ html {
     display: grid;
     justify-content: center;
     align-items: center;
-    height: 30vh;
+    height: 27vh;
     width: 100%;
     background-color: #8d7663;
     color: white;
@@ -176,6 +176,7 @@ html {
 
 }
 .content-box h1{
+    margin-left: 20px;
     border-bottom: #c0e5ee 2px solid;
     padding-bottom: 30px;
     animation: slideInMenu 1.5s ease-in-out forwards;
@@ -221,11 +222,9 @@ html {
     color: white;
     font-size: 1.5rem;
     animation-delay: 0.6s;
-}
-.blocks h1:hover{
-    color: #d2ecf4;
-    
-    animation: colorchange .5s ease-in-out;
+    animation: slideInMenu 1.5s ease-in-out forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
 }
 a{
     text-decoration: none;
